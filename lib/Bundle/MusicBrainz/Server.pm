@@ -2,7 +2,7 @@ package Bundle::MusicBrainz::Server;
 
 use 5.008;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 1;
 __END__
@@ -19,14 +19,17 @@ C<perl -MCPAN -e'install Bundle::MusicBrainz::Server'>
 
 =head1 CONTENTS
 
+Algorithm::Diff
 Apache::Session
 Apache::Session::File
+Bundle::Apache
 Cache::Memcached
 DBD::Pg
 DBI
 Digest::SHA1
 HTML::Mason
 HTTP::Negotiate
+Image::Info
 MIME-Base64
 MIME::Lite
 RDFStore
