@@ -1,4 +1,6 @@
-MANIFEST
+Changes
 Makefile.PL
-lib/Bundle/MusicBrainz/Server.pm
+MANIFEST
 README
+lib/Bundle/MusicBrainz/Server.pm
+META.yml                                 Module meta-data (added by MakeMaker)

@@ -1,0 +1,6 @@
+Revision history for Perl extension Bundle::MusicBrainz::Server.
+
+0.01  Tue Jun  1 19:40:04 2004
+	- original version; created by h2xs 1.23 with options
+		-AXcfn Bundle::MusicBrainz::Server -b 5.8.0
+

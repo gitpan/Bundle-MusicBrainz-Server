@@ -1,66 +1,59 @@
 package Bundle::MusicBrainz::Server;
 
-$VERSION = '0.01';
+use 5.008;
+
+our $VERSION = '0.01';
 
 1;
-
 __END__
 
 =head1 NAME
 
-Bundle::MusicBrainz::Server - Bundled dependancies to run a MusicBrainz Server.
+Bundle::MusicBrainz::Server - Bundle to install MusicBrainz server dependencies
+
 
 =head1 SYNOPSIS
 
-C<perl -MCPAN -e 'install Bundle::MusicBrainz::Server'>
+C<perl -MCPAN -e'install Bundle::MusicBrainz::Server'>
+
 
 =head1 CONTENTS
 
-Bundle::Apache
-
-DBI
-
+Apache::Session
 Apache::Session::File
-
-Storable
-
-HTML::Mason
-
-String::CRC32
-
-String::Similarity
-
-Unicode::String
-
-XML::DOM
-
-XML::Parser
-
-XML::XQL
-
-XML::XQL::DOM
-
-RDFStore
-
+Cache::Memcached
+DBD::Pg
+DBI
 Digest::SHA1
-
+HTML::Mason
+HTTP::Negotiate
+MIME-Base64
+MIME::Lite
+RDFStore
+Storable
+String::CRC32
 UUID
- 
+Unicode::String
+XML::Parser
+Carp
+IO::Socket
+Net::SMTP
+String::ShellQuote
+Tie::STDERR
+Time::HiRes
 URI::Escape
 
-Tie::STDERR
-
-=head1 DESCRIPTION
-
-Also need the following but it requires human intervention:
-
-Text::Unaccent	- at least version 1.05: http://www.senga.org/download/unac/Text-Unaccent-1.05.tar.gz
-
-DBD::Pg requires by hand config
 
 =head1 AUTHOR
 
-Jay Jacobs
-jayj@cpan.org
+Matthias Friedrich, E<lt>matt@mafr.deE<gt>
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright (C) 2004 by Matthias Friedrich
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.0 or,
+at your option, any later version of Perl 5 you may have available.
 
 =cut
